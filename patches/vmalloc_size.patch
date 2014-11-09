@@ -1,0 +1,12 @@
+--- a/arch/arm/mm/mmu.c
++++ b/arch/arm/mm/mmu.c
+@@ -988,7 +988,7 @@
+ #endif
+ 
+ static void * __initdata vmalloc_min =
+-	(void *)(VMALLOC_END - (300 << 20) - VMALLOC_OFFSET);
++	(void *)(VMALLOC_END - (240 << 20) - VMALLOC_OFFSET);
+ 
+ /*
+  * vmalloc=size forces the vmalloc area to be exactly 'size'
+
